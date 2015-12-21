@@ -21,6 +21,11 @@ two level test functional and unit
 actual test in html
 unit test code cycle
 
+chapter four:
+checking html
+refactoring tests
+
+
 
 
 
