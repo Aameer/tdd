@@ -16,6 +16,12 @@ chapter two:
 user story for fts/blackbox test (as not concerned about internal details)
 using unittest for fts
 
+chapter three:
+two level test functional and unit
+actual test in html
+unit test code cycle
+
+
 
 
 
