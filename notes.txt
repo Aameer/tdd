@@ -1,4 +1,6 @@
 Get the tutorials and book of tdd and then move forward:
+
+setup:
 create a virtualenv for more info refer http://aameer.github.io/articles/using-virtualenv/
 install requirements:
 pip3.4 #make sure you have pip3.4 already present , if not check new server docs of indee
@@ -6,6 +8,17 @@ django==1.7 #pip3.4 install django==1.7 as our app is in 1.7 we should upgrade t
 selenium #pip3.4 install selenium got with the laster version for more compatibilities
 fireforx
 
+chapter one:
 write your first test and make sure to run it
-after that create a repo on git
+after that create a repo on git (https://github.com/Aameer/tdd)
+
+chapter two:
+user story for fts/blackbox test (as not concerned about internal details)
+using unittest for fts
+
+
+
+
+
+
 
