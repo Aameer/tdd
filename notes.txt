@@ -25,6 +25,19 @@ chapter four:
 checking html
 refactoring tests
 
+chapter five:
+using template
+
+chapter six:
+csrf
+post request
+implicit wait to ft
+
+chapter seven:
+three strikes and refactor
+adding objects through models
+
+
 
 
 
