@@ -8,37 +8,39 @@ django==1.7 #pip3.4 install django==1.7 as our app is in 1.7 we should upgrade t
 selenium #pip3.4 install selenium got with the laster version for more compatibilities
 fireforx
 
-chapter one:
+one:
 write your first test and make sure to run it
 after that create a repo on git (https://github.com/Aameer/tdd)
 
-chapter two:
+two:
 user story for fts/blackbox test (as not concerned about internal details)
 using unittest for fts
 
-chapter three:
+three:
 two level test functional and unit
 actual test in html
 unit test code cycle
 
-chapter four:
+four:
 checking html
 refactoring tests
 
-chapter five:
+five:
 using template
 
-chapter six:
+six:
 csrf
 post request
 implicit wait to ft
 
-chapter seven:
+seven:
 three strikes and refactor
 adding objects through models
 
 
-
+eight:
+test isolation
+__init__.py for making a dir fucntional_tests a module, and fucntional_test.py into fucntional_tests/test.py in test
 
 
 
