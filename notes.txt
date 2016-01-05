@@ -44,6 +44,10 @@ yagni- you aint gona need it!
 __init__.py for making a dir fucntional_tests a module, and fucntional_test.py into fucntional_tests/test.py in test
 regular expressions
 
+nine:
+single assertion so one test does one thing
+in chapter nine dont mention append the end slash with new/ which creates issue
+
 
 
 
