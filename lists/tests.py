@@ -40,6 +40,11 @@ class ListViewTest(TestCase):
         self.assertIn('item 1',response.content.decode())
         self.assertContains(response, 'item 2')
 
+    def test_uses_lists_template(self):
+        response =self.client.get('/lists/the-only-list-in-the-world/')
+        self.assertTemplateUsed(response,'list.html')
+        
+
 class ListModelTest(TestCase):
     def test_saving_and_retrieving_items_to_the_database(self):
         first_item = Item()
