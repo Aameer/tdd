@@ -40,7 +40,9 @@ adding objects through models
 
 eight:
 test isolation
+yagni- you aint gona need it!
 __init__.py for making a dir fucntional_tests a module, and fucntional_test.py into fucntional_tests/test.py in test
+regular expressions
 
 
 

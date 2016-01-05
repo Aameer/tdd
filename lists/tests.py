@@ -19,17 +19,6 @@ class HomePageTest(TestCase):
         expected_content = render_to_string('home.html')
         self.assertEqual(response.content.decode(), expected_content)
 
-    def test_home_page_shows_items_in_database(self):
-        Item.objects.create(text= 'item 1')
-        Item.objects.create(text= 'item 2')
-
-        request = HttpRequest()
-        response = home_page(request)
-
-        self.assertIn('item 1',response.content.decode())
-        self.assertIn('item 2',response.content.decode())
-
-
     def test_home_page_can_save_post_request_to_database(self):
         request = HttpRequest()
         request.method = 'POST'
@@ -41,8 +30,17 @@ class HomePageTest(TestCase):
         self.assertEqual(item_from_db.text, 'A new item')
         
         self.assertEqual(response.status_code, 302)
-        self.assertEqual(response['Location'], '/')
+        self.assertEqual(response['Location'], '/lists/the-only-list-in-the-world/')
 
+class ListViewTest(TestCase):
+    def test_list_page_shows_items_in_database(self):
+        Item.objects.create(text= 'item 1')
+        Item.objects.create(text= 'item 2')
+        
+        response =self.client.get('/lists/the-only-list-in-the-world/')
+
+        self.assertIn('item 1',response.content.decode())
+        self.assertContains(response, 'item 2')
 
 class ListModelTest(TestCase):
     def test_saving_and_retrieving_items_to_the_database(self):
